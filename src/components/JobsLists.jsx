@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-
 import JobList from './JobList';
-
+import Spinner from './Spinner';
 
 
 const JobsLists = ( { isHome = false } ) => {
@@ -31,10 +30,16 @@ const JobsLists = ( { isHome = false } ) => {
           Browse Jobs
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {jobs.map( ( job ) => (
-        
-            <JobList key={job.id } job={ job} />
-          ) )}
+          {loading ? ( 
+          <Spinner loading={loading}/>  
+          ): (
+          <>
+            {jobs.map( ( job ) => (
+              <JobList key={job.id} job={job} />
+            ))}
+          </>  
+          )}
+          
           
 
         </div>
