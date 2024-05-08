@@ -83,20 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "c642",
-      "title": "server analyst ",
-      "type": "Full-Time",
-      "location": "Los Angeles ",
-      "description": "software engineer",
-      "salary": "Under $50K",
-      "company": {
-        "name": "Apple ",
-        "description": "Incredible company",
-        "contactEmail": "ale@gmail.com",
-        "contactPhone": "555-555-555"
-      }
     }
   ]
 }
